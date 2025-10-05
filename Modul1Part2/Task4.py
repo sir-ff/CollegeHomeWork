@@ -1,0 +1,1 @@
+print("Hello World\nI'm Vlad\nI do my homework")
