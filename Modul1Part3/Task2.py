@@ -1,7 +1,10 @@
-num_1 = int(input())
-num_2 = int(input())
-num_3 = int(input())
-num_4 = int(input())
+number_str = input("Введите четырехзначное число: ")
 
-result = num_1 * num_2 * num_3 * num_4
-print( result )
+product = 1
+
+for digit_char in number_str:
+    digit = int(digit_char)
+    product *= digit
+
+print("Произведение цифр:", product)
+
