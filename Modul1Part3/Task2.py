@@ -1,8 +1,5 @@
-numbers = input("Введите четырехзначное число: ")
-numbers = list(str(numbers))
-sum = 1:
-
+numbers = input('Введите число: ')
+count = 1
 for number in numbers:
-    sum = sum * int(numbers)
-print(numbers)
-
+    count *= int(number)
+print(count)
