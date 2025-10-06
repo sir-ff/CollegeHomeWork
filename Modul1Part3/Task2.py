@@ -6,5 +6,6 @@ for digit_char in number_str:
     digit = int(digit_char)
     product *= digit
 
-print("Произведение цифр:", product)
+print(product)
+
 
