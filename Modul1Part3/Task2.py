@@ -1,11 +1,8 @@
-number_str = input("Введите четырехзначное число: ")
+numbers = input("Введите четырехзначное число: ")
+numbers = list(str(numbers))
+sum = 1:
 
-product = 1
-
-for digit_char in number_str:
-    digit = int(digit_char)
-    product *= digit
-
-print(product)
-
+for number in numbers:
+    sum = sum * int(numbers)
+print(numbers)
 
