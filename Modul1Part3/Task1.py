@@ -1,5 +1,6 @@
-num1 = str(input())
-num2 = str(input())
-num3 = str(input())
+num1 = str(input("введите число: ))
+num2 = str(input("введите число: ))
+num3 = str(input("введите число: ))
 translation = int(num1 + num2 + num3)
-Print(translation)
+print(translation)
+
