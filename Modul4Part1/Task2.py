@@ -1,21 +1,15 @@
 text = input("Введите текст: ")
 words_input = input("Введите зарезервированные слова через пробел: ")
 
-# Разбиваем на слова
 reserved_words = words_input.split()
 
-# Разбиваем текст на слова
 text_words = text.split()
 
-# Новый список для результата
 new_text_words = []
 
-# Проверяем каждое слово
 for word in text_words:
-    # Убираем знаки препинания вокруг слова
     word_clean = word
     if len(word) > 0:
-        # Проверяем первый и последний символ
         first_char = ''
         last_char = ''
 
@@ -27,7 +21,6 @@ for word in text_words:
             last_char = word_clean[-1]
             word_clean = word_clean[:-1]
 
-        # Проверяем, есть ли слово в списке
         found = False
         for reserved in reserved_words:
             if word_clean.lower() == reserved.lower():
@@ -41,7 +34,6 @@ for word in text_words:
     else:
         new_text_words.append(word)
 
-# Собираем обратно в текст
 result = " ".join(new_text_words)
 print("Измененный текст:")
 print(result)
